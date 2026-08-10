@@ -1,4 +1,4 @@
-# Interview Assignment: Backend API, Tests, CI, and Self-Review
+# Interview Assignment: Backend, Frontend, Tests, CI, and Self-Review
 
 Time: 60 minutes.
 
@@ -17,11 +17,13 @@ A note has:
 - `body`: string
 - `priority`: `low` | `medium` | `high`
 - `created_at`: ISO timestamp
+-  Notes should be stored in memory only; do not add a database or file persistence.
 
 ## Tech Requirements
 
 - Python
 - FastAPI
+- TypeScript
 - pytest
 - GitHub Actions
 
@@ -29,11 +31,11 @@ A note has:
 
 Do not add:
 
-- frontend
 - database
 - authentication
 - Docker
 - large generated files
+- large or complex frontend features
 - unrelated tooling
 
 ## API Requirements
@@ -44,6 +46,16 @@ Do not add:
 4. `priority` defaults to `medium` if omitted.
 5. Invalid priority values must be rejected with a `400` or `422` response.
 
+## Frontend Requirement
+
+  Add a minimal TypeScript frontend for the notes API. The frontend should let a user:
+
+  1. Create a note with `title`, `body`, and optional `priority`.
+  2. View the list of created notes.
+  3. See a clear error state when note creation fails.
+
+  Keep the frontend small. Plain TypeScript, React, Vite, or another lightweight setup is acceptable. Do not add authentication, persistence beyond the existing in-memory API, or complex styling.
+  
 ## Testing Requirements
 
 Add automated tests for at least:
