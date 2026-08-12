@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Interview Assignment: Backend, Frontend, Tests, CI, and Self-Review
 
 Time: 60 minutes.
@@ -92,3 +93,6 @@ When you are done:
 ## Interview Note
 
 We are not looking for a huge codebase. A strong solution is small, tested, and easy to review. We are especially interested in how you use AI, how you verify the code, and rigorously review it.
+=======
+# pink-circle-assessment
+>>>>>>> 694d759d12bb66271ebfb57e9768c08e40e39993
